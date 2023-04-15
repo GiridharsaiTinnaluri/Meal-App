@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Script to get tailwind CSS - css framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Page Title -->
+    <title>Meal App</title>
+</head>
+
+<body class="bg-gray-500 text-gray-100">
+    
+    <!-- Navigation bar -->
+
+    <nav 
+        class=" bg-red-700 py-3 flex text-white mx-auto
+                justify-between px-2 rounded-b-sm container"
+    >
+
+        <div class="text-lg sm:text-sm md:text-base">
+            <a href="/">Meal App</a>
+        </div>
+        <div class="">
+            <button type="button" class="hover:underline" id="favouritesButton">
+                Favourites (<span id="favouritesCount">0</span>)
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+
+    <section class="container mx-auto px-1 text-center">
+        <!-- Search Bar -->
+        <div class="mt-4 flex justify-center">
+            <input 
+                id="searchInput"
+                type="search" 
+                placeholder="Search" 
+                class="caret-blue-500 focus:caret-indigo-500
+                        rounded-sm px-2 py-1 w-80 bg-slate-700
+                        text-gray-400 sm:text-sm"
+            />
+
+            <button 
+                id="searchButton"
+                type="submit" 
+                class="bg-red-700 hover:bg-red-800 rounded-sm
+                       text-white px-2 py-1 ml-1"
+            >    
+                Search
+            </button>
+        </div>
+
+        <i class="text-black text-xs" id="searchReasult-i">you can search for the meal...!!</i>
+      
+        <!-- Meal Items Diaplay Section -->
+        <section
+            id="displayMealsElement"
+        >
+  
+        </section>
+    </section>
+
+
+    <!-- Adding Script files -->
+    <script src="../js/home.js"></script>
+</body>
+</html>
