@@ -21,4 +21,4 @@ The app uses Git for version control and collaboration. The repository has a REA
   4. That's it, Now you can enjoy using the app.
   
 # Demo Links :
-  1. firebase link - 
+  1. firebase link - https://meal-app-6s4f.web.app/
